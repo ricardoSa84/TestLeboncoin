@@ -32,7 +32,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import coil.compose.AsyncImage
 import com.teste.testleboncoin.domain.models.AlbumTitle
 import com.teste.testleboncoin.presentation.theme.TestLeboncoinTheme
@@ -47,7 +46,6 @@ class MainActivity : ComponentActivity() {
         setContent {
             TestLeboncoinTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    val albumTitlesViewModel: AlbumTitlesViewModel by viewModel()
                     AlbumList()
                 }
             }

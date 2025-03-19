@@ -5,7 +5,6 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import com.teste.testleboncoin.data.database.entitys.AlbumTitleEntity
-import com.teste.testleboncoin.domain.models.AlbumTitle
 import kotlinx.coroutines.flow.Flow
 
 @Dao
