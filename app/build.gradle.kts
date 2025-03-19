@@ -54,6 +54,7 @@ dependencies {
     //Room
     implementation(libs.room.runtime)
     implementation(libs.room.ktx)
+    implementation(libs.androidx.lifecycle.runtime.testing)
     annotationProcessor(libs.room.compiler)
     ksp(libs.room.compiler)
 
@@ -68,6 +69,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -75,5 +77,19 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+
+    // Turbine for Flow testing
+    testImplementation(libs.turbine)
+    // Mockito
+    testImplementation(libs.mockito.core)
+    testImplementation(libs.mockito.kotlin)
+    // Coroutines
+    testImplementation(libs.kotlinx.coroutines.test)
+    //Retrofit
+    testImplementation(libs.mockwebserver)
+
+    testImplementation(libs.kotlin.test)
+
 
 }
